@@ -21,3 +21,4 @@ ENV PYTHONUNBUFFERED=1
 
 # Run the application
 CMD ["python", "app.py"]
+

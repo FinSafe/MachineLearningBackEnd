@@ -19,6 +19,8 @@ EXPOSE 5000
 # Define environment variable to ensure output is sent straight to the terminal
 ENV PYTHONUNBUFFERED=1
 
+# Define environment variable for the port
+ENV PORT=5000
+
 # Run the application
 CMD ["python", "app.py"]
-

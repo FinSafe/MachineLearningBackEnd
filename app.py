@@ -7,9 +7,13 @@ from sklearn.compose import ColumnTransformer
 from sklearn.pipeline import Pipeline
 from tensorflow.keras.models import load_model
 import joblib
+from flask_cors import CORS
 
 # Inisialisasi Flask
 app = Flask(__name__)
+
+# Enable CORS
+CORS(app)
 
 # Load the pre-trained model and preprocessor
 model = load_model('model.h5')
